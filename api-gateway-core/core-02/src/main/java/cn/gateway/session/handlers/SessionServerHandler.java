@@ -20,7 +20,7 @@ public class SessionServerHandler extends BaseHandler<FullHttpRequest> {
         DefaultFullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
         // 返回信息控制
         response.content().writeBytes(JSON.toJSONBytes("你访问路径被mini网关管理了 URI：" + request.uri(), SerializerFeature.PrettyFormat));
-        // 头部信息设置 ,
+        // 头部信息设置
         HttpHeaders heads = response.headers();
         // 返回内容类型
         heads.add(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.APPLICATION_JSON + "; charset=UTF-8");
