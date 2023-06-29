@@ -6,11 +6,11 @@ import org.apache.dubbo.rpc.service.GenericService;
 
 import java.lang.reflect.Method;
 
-public class IGenericReferenceProxy implements MethodInterceptor {
+public class GenericReferenceProxy implements MethodInterceptor {
     private final GenericService genericService;
     private final String methodName;
 
-    public IGenericReferenceProxy(GenericService genericService, String methodName) {
+    public GenericReferenceProxy(GenericService genericService, String methodName) {
         this.genericService = genericService;
         this.methodName = methodName;
     }
