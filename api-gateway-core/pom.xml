@@ -11,6 +11,7 @@
     <modules>
         <module>core-01</module>
         <module>core-02</module>
+        <module>core-03</module>
 
     </modules>
 
@@ -61,17 +62,6 @@
             <artifactId>dubbo</artifactId>
             <version>3.2.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.14</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <version>4.0.1</version>
-        </dependency>
-
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
