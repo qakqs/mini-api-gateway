@@ -17,7 +17,12 @@ public class SessionServer implements Callable<Channel> {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private final EventLoopGroup boss = new NioEventLoopGroup(1);
     private final EventLoopGroup work = new NioEventLoopGroup();
+    private Configuration configuration;
     private Channel channel;
+    public SessionServer(Configuration configuration){
+        this.configuration = configuration;
+    }
+
 
     @Override
     public Channel call() throws Exception {
