@@ -7,8 +7,6 @@ import io.netty.channel.SimpleChannelInboundHandler;
 public abstract class BaseHandler<T> extends SimpleChannelInboundHandler<T> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, T msg) throws Exception {
-
-
         session(channelHandlerContext, channelHandlerContext.channel(), msg);
     }
 
